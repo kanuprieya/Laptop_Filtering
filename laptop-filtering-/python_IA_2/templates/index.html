@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Information</title>
+</head>
+<body>
+    <h1>Laptop Information</h1>
+    <form id="submitForm" action="/submit" method="post">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required><br>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required><br>
+        <label for="processor_speed">Processor Speed:</label>
+        <input type="text" id="processor_speed" name="processor_speed" required><br>
+        <label for="screen_size">Screen Size:</label>
+        <input type="text" id="screen_size" name="screen_size" required><br>
+        <label for="ram">RAM:</label>
+        <input type="text" id="ram" name="ram" required><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="/display"><button>Display All</button></a>
+    <a href="/filter"><button>Filter</button></a>
+
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

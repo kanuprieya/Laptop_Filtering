@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Information</title>
+</head>
+<body>
+    <h1>Filter Laptops</h1>
+    <form id="filterForm" action="/filter" method="post">
+        <label for="minRam">Minimum RAM:</label>
+        <select id="minRam" name="minRam">
+            <option value="0">Select Minimum Ram</option>
+            <option value="4">4 GB</option>
+            <option value="8">8 GB</option>
+            <option value="16">16 GB</option>
+            <option value="32">32 GB</option>
+        </select><br>
+        <label for="minStorage">Minimum Storage:</label>
+        <select id="minStorage" name="minStorage">
+            <option value="0">Select Minimum Storage</option>
+            <option value="256">256 GB</option>
+            <option value="512">512 GB</option>
+            <option value="1024">1 TB</option>
+        </select><br>
+        <label for="Brand">Select Brand:</label>
+        <select id="Brand" name="Brand">
+            <option value="">Select Brand</option>
+            <option value="HP">HP</option>
+            <option value="Apple">Apple</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Acer">Acer</option>
+            <option value="Dell">Dell</option>
+        </select><br>
+        <label for="screen_size">Select Minimum Screen Size:</label>
+        <select id="screen_size" name="screen_size">
+            <option value="0">Select Minimum Screen Size</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">17</option>
+        </select><br>
+        <label for="max_price">Select Maximum Price:</label>
+        <select id="max_price" name="max_price">
+            <option value="0">Select Max Price</option>
+            <option value="40000">40,000</option>
+            <option value="50000">50,000</option>
+            <option value="60000">60,000</option>
+            <option value="70000">70,000</option>
+            <option value="80000">80,000</option>
+            <option value="90000">90,000</option>
+            <option value="100000">100,000</option>
+            <option value="110000">110,000</option>
+            <option value="120000">120,000</option>
+            <option value="130000">130,000</option>
+            <option value="140000">140,000</option>
+            <option value="150000">150,000</option>
+            <option value="160000">160,000</option>
+            <option value="170000">170,000</option>
+            <option value="180000">180,000</option>
+        </select><br>
+        <button type="submit">Filter</button>
+    </form>
+</body>
+</html>

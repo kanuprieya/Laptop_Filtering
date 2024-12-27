@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Information</title>
+</head>
+<body>
+    <h1>Laptop Information</h1>
+    <table border="1">
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Processor</th>
+            <th>Screen Size</th>
+            <th>RAM</th>
+            <th>Storage</th>
+            <th>Price</th>
+        </tr>
+        {% for laptop in laptops %}
+        <tr>
+            <td>{{ laptop.brand }}</td>
+            <td>{{ laptop.model }}</td>
+            <td>{{ laptop.processor }}</td>
+            <td>{{ laptop.screen_size }}</td>
+            <td>{{ laptop.ram }}</td>
+            <td>{{ laptop.storage }}</td>
+            <td>{{ laptop.price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
